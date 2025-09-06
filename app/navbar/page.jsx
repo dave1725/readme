@@ -2,14 +2,15 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, User, GraduationCap, Briefcase, Trophy, Mic } from 'lucide-react';
+import { Menu, X, User, GraduationCap, Briefcase, Trophy, Mic, Users } from 'lucide-react';
 
 const navItems = [
     {name:"About", path:"#about", icon: User},
     {name:"Education", path:"#education", icon: GraduationCap},
     {name:"Projects", path:"#projects", icon: Briefcase},
-    {name:"Hackathons", path:"#hackathons", icon: Trophy},
     {name:"Internships", path:"#internships", icon: Briefcase},
+    {name:"Communities", path:"#communities", icon: Users},
+    {name:"Hackathons", path:"#hackathons", icon: Trophy},
     {name:"Podcasts", path:"#podcasts", icon: Mic},
 ];
 

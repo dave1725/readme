@@ -5,9 +5,10 @@ import Navbar from "./navbar/page";
 import About from "./about/page";
 import Education from "./education/page";
 import Projects from "./projects/page";
-import Podcasts from "./podcasts/page";
-import Hackathons from "./hackathons/page";
 import Internships from "./internships/page";
+import Communities from "./communities/page";
+import Hackathons from "./hackathons/page";
+import Podcasts from "./podcasts/page";
 import Footer from "./footer/page";
 
 export default function Home() {
@@ -44,16 +45,23 @@ export default function Home() {
         <Internships />
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, delay: 1.0 }}
+      >
+        <Communities />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 1.2 }}
       >
         <Hackathons />
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 1.2 }}
+        transition={{ duration: 0.8, delay: 1.4 }}
       >
         <Podcasts />
       </motion.div>

@@ -153,7 +153,7 @@ const Internships = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-              className="relative flex flex-col h-[600px] w-[400px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 group"
+              className="relative flex flex-col h-[650px] w-[400px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 group"
             >
               {/* Terminal Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-blue-500/5">
