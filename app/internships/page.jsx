@@ -75,24 +75,6 @@ const internshipData = [
     githubLink: "https://github.com/dave1725",
     status: "completed"
   },
-  {
-    id: 3,
-    company: "SRM University, AP",
-    position: "Software Developer Intern",
-    duration: "June 2024 - Aug 2024",
-    location: "Amaravati, AP", 
-    type: "COMPLETED",
-    description: "First internship experience focusing on foundational development skills and exploring blockchain technologies. Gained hands-on experience with distributed systems and modern development practices.",
-    keyAchievements: [
-      "Gained foundational development experience",
-      "Explored blockchain and distributed systems",
-      "Learned modern development practices",
-      "Built technical foundation for future roles"
-    ],
-    technologies: ["Blockchain", "Distributed Systems", "Development Practices"],
-    githubLink: "https://github.com/dave1725",
-    status: "completed"
-  }
 ];
 
 const Internships = () => {
