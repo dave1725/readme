@@ -264,7 +264,7 @@ const ProjectCard = ({ project, index }) => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-      className={`relative flex flex-col h-[600px] w-[400px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 group ${
+      className={`relative flex flex-col h-[680px] w-[450px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 group ${
         project.featured ? 'hover:border-yellow-400/40' : 'hover:border-blue-400/40'
       }`}
     >
@@ -292,9 +292,9 @@ const ProjectCard = ({ project, index }) => {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col p-5 flex-grow overflow-hidden">
+      <div className="flex flex-col p-6 flex-grow overflow-hidden">
         {/* Project Info */}
-        <div className="mb-3">
+        <div className="mb-4">
           <div className="font-mono text-white/60 text-xs mb-1">
             {"// Project: "}<span className={project.featured ? "text-yellow-400" : "text-blue-400"}>{project.title}</span>
           </div>
@@ -310,17 +310,17 @@ const ProjectCard = ({ project, index }) => {
         <h3 className="text-xl font-bold text-white mb-1 font-mono">
           {project.title}
         </h3>
-        <p className={`font-mono text-sm mb-3 ${project.featured ? 'text-yellow-400' : 'text-blue-400'}`}>
+        <p className={`font-mono text-sm mb-4 ${project.featured ? 'text-yellow-400' : 'text-blue-400'}`}>
           {project.subtitle}
         </p>
 
         {/* Description */}
-        <p className="text-white/70 text-sm leading-relaxed mb-3 line-clamp-3">
+        <p className="text-white/70 text-sm leading-relaxed mb-4 line-clamp-3">
           {project.description}
         </p>
 
         {/* Key Achievements */}
-        <div className="mb-3">
+        <div className="mb-4">
           <div className="text-white/80 font-mono text-sm mb-2">{"// Achievements:"}</div>
           <ul className="space-y-1">
             {project.achievements.slice(0, 3).map((achievement, idx) => (
@@ -333,7 +333,7 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         {/* Technologies */}
-        <div className="mb-3">
+        <div className="mb-4">
           <div className="text-white/80 font-mono text-sm mb-2">{"// Tech Stack:"}</div>
           <div className="flex flex-wrap gap-1 mb-2">
             {project.technologies.slice(0, 4).map((tech, techIndex) => (

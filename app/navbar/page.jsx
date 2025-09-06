@@ -8,9 +8,9 @@ const navItems = [
     {name:"About", path:"#about", icon: User},
     {name:"Education", path:"#education", icon: GraduationCap},
     {name:"Projects", path:"#projects", icon: Briefcase},
-    {name:"Podcasts", path:"#podcasts", icon: Mic},
     {name:"Hackathons", path:"#hackathons", icon: Trophy},
-    {name:"Internships", path:"#internships", icon: Briefcase}
+    {name:"Internships", path:"#internships", icon: Briefcase},
+    {name:"Podcasts", path:"#podcasts", icon: Mic},
 ];
 
 const Navbar = () => {
