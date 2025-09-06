@@ -6,7 +6,7 @@ import { SiReact, SiNextdotjs, SiNodedotjs, SiSolidity, SiMongodb, SiPython, SiT
 const projectStats = [
   {
     icon: FaCode,
-    number: "6+",
+    number: "7+",
     label: "projects.total",
     color: "text-blue-400",
     bgColor: "bg-blue-500/10",
@@ -93,6 +93,34 @@ const projectData = [
   },
   {
     id: 3,
+    title: "Rakshak",
+    subtitle: "// Advanced Healthcare Data Security Platform",
+    category: "HEALTHCARE",
+    status: "AWARD_WINNING",
+    description: "Transforming healthcare data security: Blockchain and encryption ensure integrity. Access revocation, Digilocker-style storage assure privacy. Effortless file exchange with our intuitive healthbot. Combines cutting-edge blockchain technology and advanced encryption algorithms to offer unparalleled security for medical file exchange and storage.",
+    achievements: [
+      "Winner at Hackspiration'2024",
+      "Unparalleled security for medical file exchange",
+      "Robust encryption and immutable blockchain technology",
+      "Access revocation capability for enhanced control",
+      "Digilocker-style secure storage infrastructure",
+      "Dedicated healthbot interface for intuitive management",
+      "Compliance with regulatory requirements"
+    ],
+    technologies: ["Blockchain", "React.js", "Node.js", "Encryption", "Smart Contracts", "Healthcare APIs"],
+    techIcons: [SiReact, SiNodedotjs, SiSolidity, SiMongodb],
+    githubLink: "https://github.com/nishant-Tiwari24/rakshak",
+    liveLink: "https://devfolio.co/projects/rakshak-ba2a",
+    featured: true,
+    type: "blockchain",
+    hackathon: "Hackspiration'2024",
+    views: "602",
+    likes: "9"
+  },
+];
+
+const allProjectData = [{
+    id: 4,
     title: "OneHeart Website",
     subtitle: "// Music Club Official Website",
     category: "WEB_DEVELOPMENT",
@@ -112,7 +140,7 @@ const projectData = [
     type: "web"
   },
   {
-    id: 4,
+    id: 5,
     title: "Poseidon",
     subtitle: "// ZK-SNARK Automation Toolkit",
     category: "CRYPTOGRAPHY",
@@ -132,7 +160,7 @@ const projectData = [
     type: "crypto"
   },
   {
-    id: 5,
+    id: 6,
     title: "PegasusX",
     subtitle: "// Penetration Testing Toolkit",
     category: "CYBERSECURITY",
@@ -152,7 +180,7 @@ const projectData = [
     type: "security"
   },
   {
-    id: 6,
+    id: 7,
     title: "Heracles",
     subtitle: "// PC Maintenance Application",
     category: "DESKTOP_APP",
@@ -259,7 +287,7 @@ const Projects = () => {
             {"// All Projects"}
           </h3>
           <div className="flex flex-row gap-[50px] flex-wrap justify-center max-w-7xl">
-            {projectData.map((project, index) => (
+            {allProjectData.map((project, index) => (
               <ProjectCard key={project.id} project={project} index={index} />
             ))}
           </div>
