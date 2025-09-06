@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { FaCode, FaGithub, FaExternalLinkAlt, FaTrophy, FaRocket, FaShieldAlt, FaDatabase, FaCog } from "react-icons/fa";
-import { SiReact, SiNextdotjs, SiNodedotjs, SiSolidity, SiMongodb, SiPython, SiTailwindcss, SiIpfs, SiCloudflare, SiDocker } from "react-icons/si";
+import { SiReact, SiNextdotjs, SiNodedotjs, SiSolidity, SiMongodb, SiPython, SiTailwindcss, SiIpfs, SiCloudflare, SiDocker, SiPolygon, SiEthereum } from "react-icons/si";
 
 const projectStats = [
   {
@@ -41,43 +41,55 @@ const projectStats = [
 const projectData = [
   {
     id: 1,
-    title: "BriefCase",
-    subtitle: "// Blockchain Medical Data Platform",
+    title: "Briefcase",
+    subtitle: "// Web 3.0 Secure Document Exchange Platform",
     category: "HEALTHCARE",
     status: "AWARD_WINNING",
-    description: "Built a blockchain platform enabling secure medical data exchange using smart contracts and IPFS. Ensured scalability with decentralized storage and interoperability across healthcare systems.",
+    description: "Exchange sensitive information and documents in scrambled and encrypted form through our Web 3.0 platform and storing logistics, ensuring confidentiality and integrity at every step. Addresses the pressing need for secure and efficient exchange and storage of medical files in today's digital healthcare landscape.",
     achievements: [
-      "$350 bounty at VIT-AP Web3.0 hackathon",
-      "National hackathon winner",
-      "Secure medical record sharing",
-      "Decentralized storage with IPFS"
+      "Leverages blockchain and encryption technology for utmost security",
+      "Decentralized storage eliminating centralized system vulnerabilities", 
+      "Transparent transaction recording on blockchain",
+      "User-friendly interface with subscription model",
+      "Resilient platform for medical file management",
+      "Supports healthcare professionals, researchers, and patients",
+      "Ongoing innovation and development in healthcare field"
     ],
-    technologies: ["React.js", "Node.js", "Solidity", "IPFS", "MongoDB", "Git"],
-    techIcons: [SiReact, SiNodedotjs, SiSolidity, SiIpfs, SiMongodb],
-    githubLink: "https://github.com/dave1725",
-    liveLink: "https://devfolio.co/@dave1725",
+    technologies: ["Solidity", "React", "Node.js", "Metabase", "Express.js", "Remix IDE", "Ethereum", "web3j", "Tailwind CSS", "Polygon"],
+    techIcons: [SiSolidity, SiReact, SiNodedotjs, SiTailwindcss, SiEthereum],
+    githubLink: "https://github.com/bhowmik1234/briifee",
+    liveLink: "https://devfolio.co/projects/briefcase-ebad",
     featured: true,
-    type: "blockchain"
+    type: "blockchain",
+    date: "14th April 2024",
+    views: "839",
+    likes: "12"
   },
   {
     id: 2,
     title: "UPI CryptoConnect",
-    subtitle: "// DeFi Integration Platform",
+    subtitle: "// Revolutionary FinTech Application",
     category: "FINTECH",
     status: "AWARD_WINNING",
-    description: "Developed prize-winning DeFi application integrating UPI identity for seamless crypto transactions. Implemented flash loan protocol, demonstrating efficient use of smart contracts for real-time execution.",
+    description: "Revolutionary fintech application that brings crypto transactions and finance transactions under the same umbrella through UPI. Bridges the gap between traditional fiat and cryptocurrency payments using a unified platform with common identifiers.",
     achievements: [
       "$100 bounty and CEO recognition at ETHIndia",
-      "Recurzive'24 hackathon winner",
-      "UPI identity integration",
+      "Built at Recurzive'24 hackathon (5th July 2024)",
+      "2.4K views and 21 likes on Devfolio",
+      "Unified crypto and fiat transaction platform",
+      "UPI integration for seamless payments",
       "Flash loan protocol implementation"
     ],
-    technologies: ["React.js", "DeFi", "Solidity", "Node.js", "IPFS", "Git"],
-    techIcons: [SiReact, SiSolidity, SiNodedotjs, SiIpfs],
-    githubLink: "https://github.com/dave1725",
-    liveLink: "https://devfolio.co/@dave1725",
+    technologies: ["Solidity", "Node.js", "Express.js", "AAVE", "MongoDB", "Ethereum", "React.js"],
+    techIcons: [SiReact, SiSolidity, SiNodedotjs, SiMongodb],
+    githubLink: "https://github.com/nishant-Tiwari24/upi-cryptoconnect",
+    liveLink: "https://devfolio.co/projects/upi-cryptoconnect-ce5c",
     featured: true,
-    type: "defi"
+    type: "defi",
+    hackathon: "Recurzive'24",
+    date: "5th July 2024",
+    views: "2.4K",
+    likes: "21"
   },
   {
     id: 3,
@@ -301,9 +313,27 @@ const ProjectCard = ({ project, index }) => {
           <div className="font-mono text-white/60 text-xs mb-1">
             {"// Category: "}<span className="text-white">{project.category}</span>
           </div>
-          <div className="font-mono text-white/60 text-xs mb-3">
+          <div className="font-mono text-white/60 text-xs mb-1">
             {"// Type: "}<span className="text-green-400">{project.type}</span>
           </div>
+          {project.hackathon && (
+            <div className="font-mono text-white/60 text-xs mb-1">
+              {"// Hackathon: "}<span className="text-yellow-400">{project.hackathon}</span>
+            </div>
+          )}
+          {project.date && (
+            <div className="font-mono text-white/60 text-xs mb-1">
+              {"// Date: "}<span className="text-purple-400">{project.date}</span>
+            </div>
+          )}
+          {(project.views || project.likes) && (
+            <div className="font-mono text-white/60 text-xs mb-1">
+              {"// Engagement: "}
+              {project.views && <span className="text-blue-400">{project.views} views</span>}
+              {project.views && project.likes && <span className="text-white/60"> • </span>}
+              {project.likes && <span className="text-red-400">{project.likes} likes</span>}
+            </div>
+          )}
         </div>
 
         {/* Project Title */}
