@@ -6,6 +6,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { FaQuora } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa";
+import { SiDevdotto } from "react-icons/si";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
@@ -77,6 +78,16 @@ const About = () => {
                 className="text-white hover:text-blue-400 transition-colors duration-300"
               >
                 <BsLinkedin size={40} />
+              </motion.a>
+              <motion.a
+                href="https://devfolio.co/@dave1725"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+                className="text-white hover:text-blue-400 transition-colors duration-300"
+              >
+                <SiDevdotto size={40} />
               </motion.a>
               <motion.a
                 href="https://quora.com/profile/davemeshak"

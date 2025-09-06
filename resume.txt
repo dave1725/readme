@@ -1,0 +1,49 @@
+ 
+Dave Meshak J
+ +91 9345872568
+ Amaravati, Andhra Pradesh, India
+ Linkedin | 
+Summary
+ Devfolio | 
+davedmj1725@gmail.com | 
+Software Engineering student with strong foundations in data structures, algorithms, and object-oriented programming
+ (CodeChef rating: 1400). Experienced in full-stack development, distributed systems, CI/CD pipelines, and observability
+ tools. Proven ability to design scalable, high-performance applications through internships, and national hackathon wins.
+ Work Experience
+ 2LYP Computations– Software Engineering Intern | GitHub Link
+ June 2025– July 2025– Designed and deployed distributed token infrastructure on Polygon testnet, focusing on scalability and security.– Built a token vesting system and analytics dashboard, optimizing performance and user experience.– Applied Agile methodologies and automated workflows using Git & GitHub Actions for CI/CD.
+ HackSRM 6.0– Hackathon Organizer | Devfolio Link– Coordinated logistics, outreach, and sponsor engagement for 500+ participant hackathon.– Designed and deployed the official website using Next.js, Node.js, and TailwindCSS (GitHub).– Facilitated collaboration with 10+ industry mentors to enhance technical engagement.
+ SRM University, AP– Software Developer Intern
+ Dec 2024– Feb 2025
+ June 2024– Aug 2024– Built a prototype for secure medical record sharing using Hyperledger Fabric, improving integrity and reliability.– Integrated Prometheus and Grafana to monitor distributed applications with real-time diagnostics.
+ Communities
+ Next Tech Lab– R&D Member
+ March 2023– Present– Developed tools exploring distributed systems, ZK-SNARK workflows, and blockchain-based applications.– Built Heracles (PC maintenance app) and Poseidon (ZK-SNARK automation toolkit).– Served as interim board member, driving technical discussions and mentoring peers.
+ Music Club– Website Lead & Former Convener
+ Aug 2024– Present– Leading website development with Next.js and Cloudflare CDN; previously managed events and budgeting as Convener.
+ Projects
+ BriefCase | React.js, Node.js, Solidity, IPFS, MongoDB, Git– Built a blockchain platform enabling secure medical data exchange using smart contracts and IPFS.– Ensured scalability with decentralized storage and interoperability across healthcare systems.
+ OneHeart Website | Next.js, TailwindCSS, Sanity CMS, Cloudflare, Framer Motion
+ [Devfolio Link]
+ [Live Site]– Designed and deployed the official website for SRM University’s music club with Next.js and TailwindCSS, integrating
+ Sanity CMS for content management.– Optimized performance and SEO using Cloudflare CDN and enhanced UX with responsive design and Framer Motion.
+ UPI CryptoConnect | React.js, DeFi, Solidity, Node.js, IPFS, Git
+ [Devfolio Link]– Developed prize-winning DeFi application integrating UPI identity for seamless crypto transactions.– Implemented flash loan protocol, demonstrating efficient use of smart contracts for real-time execution.
+ Poseidon | Python, Circom, ZK-SNARKs, CLI Tooling, GitHub Actions– Built CLI toolkit for end-to-end zk-SNARK development, automating proof lifecycle.– Reduced manual setup steps by 90% through flexible automation flags and CI/CD.
+ PegasusX | Python, Cryptography, CyberSecurity, Git– Created modular penetration testing toolkit with 15+ utilities for encryption, exploits, and forensics.– Designed extensible architecture with authentication layer and rapid-use configurations.
+ Education
+ [GitHub Link]
+ [GitHub Link]
+ 2022– 2026 B.Tech, Computer Science and Engineering, SRM University, AP
+ 2021– 2022 Class 12 (CBSE), Pushpalata Vidya Mandir
+ 2019– 2020 Class 10 (CBSE), Pushpalata Vidya Mandir
+ Skills
+ CGPA: 8.53 / 10.0
+ Percentage: 87%
+ Percentage: 86%
+ Proficient
+ C++, Python, JavaScript, Data Structures, SQL, MongoDB, React.js, Next.js, CI/CD, Solidity, Hyper
+ledger Fabric, Leadership, Communication
+ Intermediate Node.js, Express.js, Java, Docker, Git, Linux, TailwindCSS, Prometheus, Grafana, Bash
+ Achievements– Won 3 national hackathons including $350 bounty at VIT-AP Web3.0 (BriefCase).– $100 bounty and CEO recognition at ETHIndia Recurzive’24 (UPI CryptoConnect).– 25% SRMJEEE merit scholarship recipient.– NPTEL Silver Certificate in Python by IIT Madras (Score: 88%).
+ Last updated: August 30, 202
