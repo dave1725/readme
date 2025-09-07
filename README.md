@@ -46,10 +46,6 @@ A modern, responsive personal portfolio website built with Next.js, featuring a 
 ### Icons & Graphics
 - **Lucide React 0.542.0** - Beautiful & consistent icon library
 - **React Icons 5.5.0** - Popular icon library with multiple icon packs
-- **Three.js 0.173.0** - 3D graphics library
-
-### Data Visualization
-- **Recharts 3.1.2** - Composable charting library for React
 
 ### Development Tools
 - **ESLint 9** - Code linting and formatting
@@ -64,7 +60,7 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 **Dave Meshak J**
 - GitHub: [@dave1725](https://github.com/dave1725)
 - LinkedIn: [Dave Meshak J](https://www.linkedin.com/in/dave-meshak-j-6801b2204/)
-- Email: [your-email@example.com](mailto:davedmj1725@gmail.com)
+- Email: [davedmj1725@gmail.com](mailto:davedmj1725@gmail.com)
 
 ---
 
