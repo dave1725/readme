@@ -93,18 +93,18 @@ const Podcasts = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex mb-[80px] flex-col gap-3 justify-center text-center items-center"
+          className="flex mb-[60px] md:mb-[80px] flex-col gap-3 justify-center text-center items-center px-4"
         >
-          <div className="flex items-center gap-4 text-[50px] font-mono text-white">
+          <div className="flex items-center gap-2 md:gap-4 text-[32px] md:text-[50px] font-mono text-white">
             <FaMicrophone className="text-white" />
             <span>./podcasts</span>
           </div>
-          <div className="text-white/60 font-mono text-sm">
+          <div className="text-white/60 font-mono text-xs md:text-sm">
             {"// Say Whaat? With SRM AP - Audio adventures in tech"}
           </div>
           <div className="flex items-center gap-2 mt-2">
-            <FaSpotify className="text-green-400" size={20} />
-            <span className="text-green-400 font-mono text-sm">Available on Spotify</span>
+            <FaSpotify className="text-green-400" size={16} />
+            <span className="text-green-400 font-mono text-xs md:text-sm">Available on Spotify</span>
           </div>
         </motion.div>
 
@@ -113,7 +113,7 @@ const Podcasts = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-4 gap-8 mb-[100px]"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-[60px] md:mb-[100px] px-4 max-w-6xl"
         >
           {podcastStats.map((stat, index) => {
             const IconComponent = stat.icon;
@@ -158,7 +158,7 @@ const Podcasts = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-              className="relative flex flex-col h-[720px] w-[400px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-green-400/40 group"
+              className="relative flex flex-col h-auto lg:h-[720px] w-full max-w-[400px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-green-400/40 group"
             >
               {/* Audio Player Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-green-500/5">

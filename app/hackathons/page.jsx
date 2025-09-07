@@ -108,13 +108,13 @@ const Hackathons = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex mb-[80px] flex-col gap-3 justify-center text-center items-center"
+          className="flex mb-[60px] md:mb-[80px] flex-col gap-3 justify-center text-center items-center px-4"
         >
-          <div className="flex items-center gap-4 text-[50px] font-mono text-white">
+          <div className="flex items-center gap-2 md:gap-4 text-[32px] md:text-[50px] font-mono text-white">
             <FaTerminal className="text-white" />
             <span>./hackathons</span>
           </div>
-          <div className="text-white/60 font-mono text-sm">
+          <div className="text-white/60 font-mono text-xs md:text-sm">
             {"// Competition achievements and code victories"}
           </div>
         </motion.div>
@@ -124,7 +124,7 @@ const Hackathons = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-4 gap-8 mb-[100px]"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-[60px] md:mb-[100px] px-4 max-w-6xl"
         >
           {hackathonStats.map((stat, index) => {
             const IconComponent = stat.icon;
@@ -169,7 +169,7 @@ const Hackathons = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-              className="relative flex flex-col h-[650px] w-[360px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-white/40 group"
+              className="relative flex flex-col h-auto lg:h-[650px] w-full max-w-[360px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-white/40 group"
             >
               {/* Terminal Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-white/10">

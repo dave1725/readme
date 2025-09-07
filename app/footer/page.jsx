@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMapMarkerAlt, FaPhone, FaHeart, FaTerminal, FaCode, FaCoffee, FaRocket } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaMapMarkerAlt, FaPhone, FaHeart, FaTerminal, FaCode, FaCoffee, FaRocket, FaMagic } from 'react-icons/fa';
 import { SiNextdotjs, SiFramer, SiTailwindcss, SiVercel } from 'react-icons/si';
 
 const Footer = () => {
@@ -25,6 +25,7 @@ const Footer = () => {
     { icon: SiNextdotjs, name: "Next.js" },
     { icon: SiFramer, name: "Framer Motion" },
     { icon: SiTailwindcss, name: "Tailwind CSS" },
+    { icon: FaMagic, name: "GSAP" },
     { icon: SiVercel, name: "Vercel" }
   ];
 
@@ -43,7 +44,7 @@ const Footer = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="grid grid-cols-4 gap-4 mb-12"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 md:mb-12"
         >
           {footerStats.map((stat, index) => (
             <motion.div
@@ -51,10 +52,10 @@ const Footer = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="flex flex-col items-center p-4 rounded-xl border border-white/20 bg-black/50 backdrop-blur-sm hover:scale-105 transition-transform duration-300"
+              className="flex flex-col items-center p-3 md:p-4 rounded-xl border border-white/20 bg-black/50 backdrop-blur-sm hover:scale-105 transition-transform duration-300"
             >
-              <stat.icon className={`${stat.color} text-2xl mb-2`} />
-              <div className={`${stat.color} text-xl font-mono font-bold mb-1`}>
+              <stat.icon className={`${stat.color} text-xl md:text-2xl mb-2`} />
+              <div className={`${stat.color} text-lg md:text-xl font-mono font-bold mb-1`}>
                 {stat.number}
               </div>
               <div className="text-white/60 font-mono text-xs">
@@ -65,7 +66,7 @@ const Footer = () => {
         </motion.div>
 
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
           {/* Profile Terminal */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -178,7 +179,7 @@ const Footer = () => {
               <div className="font-mono text-white/60 text-xs mb-4">
                 {"// Social Links"}
               </div>
-              <div className="grid grid-cols-2 gap-2 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={index}
@@ -189,8 +190,8 @@ const Footer = () => {
                     whileTap={{ scale: 0.95 }}
                     className="flex items-center gap-2 p-2 rounded border border-white/20 bg-white/5 hover:bg-white/10 hover:border-purple-400/50 transition-all duration-300"
                   >
-                    <social.icon size={16} className="text-purple-400" />
-                    <span className="text-white/70 font-mono text-xs">{social.label}</span>
+                    <social.icon size={16} className="text-purple-400 flex-shrink-0" />
+                    <span className="text-white/70 font-mono text-xs truncate">{social.label}</span>
                   </motion.a>
                 ))}
               </div>
@@ -198,14 +199,14 @@ const Footer = () => {
               <div className="font-mono text-white/60 text-xs mb-3">
                 {"// Built With"}
               </div>
-              <div className="flex gap-2 flex-wrap">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 {techStack.map((tech, index) => (
                   <div
                     key={index}
                     className="flex items-center gap-1 px-2 py-1 rounded border border-white/20 bg-white/5"
                   >
-                    <tech.icon size={12} className="text-white/60" />
-                    <span className="text-white/60 font-mono text-xs">{tech.name}</span>
+                    <tech.icon size={12} className="text-white/60 flex-shrink-0" />
+                    <span className="text-white/60 font-mono text-xs truncate">{tech.name}</span>
                   </div>
                 ))}
               </div>

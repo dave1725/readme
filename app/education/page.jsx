@@ -124,18 +124,18 @@ const Education = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex mb-[80px] flex-col gap-3 justify-center text-center items-center"
+          className="flex mb-[60px] md:mb-[80px] flex-col gap-3 justify-center text-center items-center px-4"
         >
-          <div className="flex items-center gap-4 text-[50px] font-mono text-white">
+          <div className="flex items-center gap-2 md:gap-4 text-[32px] md:text-[50px] font-mono text-white">
             <FaGraduationCap className="text-white" />
             <span>./education</span>
           </div>
-          <div className="text-white/60 font-mono text-sm">
+          <div className="text-white/60 font-mono text-xs md:text-sm">
             {"// Academic journey and continuous learning"}
           </div>
           <div className="flex items-center gap-2 mt-2">
-            <FaSchool className="text-blue-400" size={20} />
-            <span className="text-blue-400 font-mono text-sm">Building knowledge foundation</span>
+            <FaSchool className="text-blue-400" size={16} />
+            <span className="text-blue-400 font-mono text-xs md:text-sm">Building knowledge foundation</span>
           </div>
         </motion.div>
 
@@ -144,7 +144,7 @@ const Education = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-4 gap-8 mb-[100px]"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-[60px] md:mb-[100px] px-4 max-w-6xl"
         >
           {educationStats.map((stat, index) => {
             const IconComponent = stat.icon;
@@ -154,27 +154,27 @@ const Education = () => {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                className={`relative flex flex-col items-center p-6 rounded-xl border ${stat.borderColor} ${stat.bgColor} backdrop-blur-sm hover:scale-105 transition-all duration-300 group`}
+                className={`relative flex flex-col items-center p-4 md:p-6 rounded-xl border ${stat.borderColor} ${stat.bgColor} backdrop-blur-sm hover:scale-105 transition-all duration-300 group`}
               >
                 {/* Terminal-like header */}
                 <div className="absolute top-2 left-3 flex gap-1">
-                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
-                  <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-red-400 rounded-full"></div>
+                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-yellow-400 rounded-full"></div>
+                  <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-green-400 rounded-full"></div>
                 </div>
                 
-                <div className="mt-4 mb-4">
-                  <IconComponent size={32} className={`${stat.color} group-hover:scale-110 transition-transform duration-300`} />
+                <div className="mt-4 mb-3 md:mb-4">
+                  <IconComponent size={24} className={`md:size-8 ${stat.color} group-hover:scale-110 transition-transform duration-300`} />
                 </div>
                 
                 <div className="text-center">
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="flex items-center gap-1 md:gap-2 mb-2">
                     <span className="text-white/40 font-mono text-xs">const</span>
-                    <span className="text-white font-mono text-sm">{stat.label}</span>
+                    <span className="text-white font-mono text-xs md:text-sm">{stat.label}</span>
                     <span className="text-white/40 font-mono text-xs">=</span>
                   </div>
-                  <span className={`text-3xl font-bold font-mono ${stat.color}`}>{stat.number}</span>
-                  <span className="text-white/60 font-mono text-sm">;</span>
+                  <span className={`text-2xl md:text-3xl font-bold font-mono ${stat.color}`}>{stat.number}</span>
+                  <span className="text-white/60 font-mono text-xs md:text-sm">;</span>
                 </div>
               </motion.div>
             );
@@ -182,14 +182,14 @@ const Education = () => {
         </motion.div>
 
         {/* Education Cards */}
-        <div className="flex flex-row gap-[60px] flex-wrap justify-center max-w-7xl mb-[80px]">
+        <div className="flex flex-col lg:flex-row gap-[30px] lg:gap-[60px] flex-wrap justify-center max-w-7xl mb-[60px] md:mb-[80px] px-4">
           {educationData.map((education, index) => (
             <motion.div
               key={education.id}
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-              className="relative flex flex-col h-[650px] w-[420px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 group"
+              className="relative flex flex-col h-auto lg:h-[650px] w-full max-w-[420px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 group"
             >
               {/* Terminal Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-blue-500/5">
@@ -213,7 +213,7 @@ const Education = () => {
               </div>
 
               {/* Content */}
-              <div className="flex flex-col p-5 flex-grow overflow-hidden">
+              <div className="flex flex-col p-4 md:p-5 flex-grow overflow-hidden">
                 {/* Institution Info */}
                 <div className="mb-3">
                   <div className="font-mono text-white/60 text-xs mb-1">
@@ -301,21 +301,21 @@ const Education = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.0 }}
-          className="w-full max-w-4xl"
+          className="w-full max-w-4xl px-4"
         >
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-white mb-2 font-mono">./certifications</h3>
-            <p className="text-white/60 font-mono text-sm">{"// Additional learning achievements"}</p>
+          <div className="text-center mb-6 md:mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 font-mono">./certifications</h3>
+            <p className="text-white/60 font-mono text-xs md:text-sm">{"// Additional learning achievements"}</p>
           </div>
           
-          <div className="flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
             {certifications.map((cert, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 1.2 + index * 0.1 }}
-                className="relative flex flex-col w-[320px] h-[240px] p-5 border border-purple-400/30 bg-purple-500/10 backdrop-blur-sm rounded-xl hover:scale-105 transition-all duration-300 group"
+                className="relative flex flex-col w-full max-w-[320px] h-[240px] p-4 md:p-5 border border-purple-400/30 bg-purple-500/10 backdrop-blur-sm rounded-xl hover:scale-105 transition-all duration-300 group"
               >
                 {/* Terminal header */}
                 <div className="absolute top-2 left-3 flex gap-1">

@@ -1,9 +1,18 @@
 "use client";
-import React, { useMemo } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 
 const Background = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  // Ensure we're on the client side to avoid hydration mismatch
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   // Generate stars once to prevent flickering on re-renders
   const stars = useMemo(() => {
+    if (!isClient) return [];
+    
     return Array.from({ length: 200 }, (_, index) => ({
       id: index,
       x: Math.random() * 100,
@@ -12,11 +21,11 @@ const Background = () => {
       opacity: Math.random() * 0.8 + 0.2,
       animationDelay: Math.random() * 5
     }));
-  }, []);
+  }, [isClient]);
 
   return (
     <div className="fixed inset-0 overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black z-[-1]">
-      {stars.map((star) => {
+      {isClient && stars.map((star) => {
         const glowSize = star.size * 1;
 
         return (

@@ -61,17 +61,17 @@ const About = () => {
   return (
     <>
       <div id="about" className="mb-[50px]"></div>
-      
-      <div className="flex flex-col items-center w-[100vw] min-h-screen py-20">
-        
+
+      <div className="flex mt-[-25px] flex-col items-center w-[100vw] min-h-screen py-20">
+
         {/* Main Content */}
-        <div className="flex flex-row gap-[80px] justify-center items-center max-w-7xl mx-auto px-6">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-[80px] justify-center items-center max-w-7xl mx-auto px-4 md:px-6">
           {/* Profile Terminal */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative flex flex-col w-[450px] h-[550px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
+            className="relative flex flex-col w-full max-w-[450px] h-[500px] md:h-[550px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
           >
             {/* Terminal Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-blue-500/5">
@@ -141,7 +141,7 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="relative flex flex-col w-[600px] h-[600px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
+            className="relative flex flex-col w-full max-w-[700px] h-[600px] md:h-[620px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
           >
             {/* Terminal Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-green-500/5">
@@ -159,23 +159,23 @@ const About = () => {
             </div>
 
             {/* Terminal Content */}
-            <div className="flex flex-col p-6 flex-grow">
+            <div className="flex flex-col p-4 md:p-6 flex-grow overflow-hidden">
               {/* Bio Section */}
-              <div className="mb-6">
-                <div className="text-white/80 font-mono text-sm mb-3">{"// About Me:"}</div>
-                <p id="bio-text" className="text-white/70 text-sm leading-relaxed min-h-[80px] font-mono">
+              <div className="mb-4 md:mb-6">
+                <div className="text-white/80 font-mono text-xs md:text-sm mb-2 md:mb-3">{"// About Me:"}</div>
+                <p id="bio-text" className="text-white/70 text-xs md:text-sm leading-relaxed min-h-[60px] md:min-h-[80px] font-mono">
                   {/* Text will be animated by GSAP */}
                 </p>
               </div>
 
               {/* Specializations */}
-              <div className="mb-6">
-                <div className="text-white/80 font-mono text-sm mb-3">{"// Specializations:"}</div>
-                <div className="flex flex-wrap gap-2">
+              <div className="mb-4 md:mb-6">
+                <div className="text-white/80 font-mono text-xs md:text-sm mb-2 md:mb-3">{"// Specializations:"}</div>
+                <div className="flex flex-wrap gap-1 md:gap-2">
                   {["Full Stack Development", "zkProofs", "Blockchain", "AI/ML", "C++", "Docker", "Cloud","NodeJS","Express", "Ethereum", "Solidity","MongoDB","CouchDB","Hyperledger Fabric","Github Actions","NextJS","ReactJS","HTML5/CSS3","Python"].map((skill, index) => (
                     <span
                       key={index}
-                      className="text-xs text-blue-400 bg-blue-400/10 px-3 py-1 rounded border border-blue-400/20 font-mono"
+                      className="text-xs text-blue-400 bg-blue-400/10 px-2 md:px-3 py-1 rounded border border-blue-400/20 font-mono"
                     >
                       {skill}
                     </span>
@@ -184,8 +184,8 @@ const About = () => {
               </div>
 
               {/* Current Focus */}
-              <div className="mb-6">
-                <div className="text-white/80 font-mono text-sm mb-3">{"// Current Focus:"}</div>
+              <div className="mb-4 md:mb-6">
+                <div className="text-white/80 font-mono text-xs md:text-sm mb-2 md:mb-3">{"// Current Focus:"}</div>
                 <ul className="space-y-1">
                   {[
                     "Building innovative Web3 applications",
@@ -201,12 +201,12 @@ const About = () => {
               </div>
 
               {/* Action Button */}
-              <div className="mt-auto">
+              <div className="mt-auto md:mt-8">
                 <motion.a
                   href="#education"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full px-4 py-3 text-white text-sm font-mono rounded border border-green-400/30 bg-green-500/10 backdrop-blur-sm transition duration-300 hover:bg-green-500/20 hover:border-green-400/50 flex items-center justify-center gap-2"
+                  className="w-full px-3 md:px-4 py-2 md:py-3 text-white text-xs md:text-sm font-mono rounded border border-green-400/30 bg-green-500/10 backdrop-blur-sm transition duration-300 hover:bg-green-500/20 hover:border-green-400/50 flex items-center justify-center gap-2"
                 >
                   {"./explore_journey.sh"}
                 </motion.a>
@@ -220,7 +220,7 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid grid-cols-4 mt-10 gap-6 "
+          className="grid grid-cols-2 md:grid-cols-4 mt-8 md:mt-10 gap-4 md:gap-6 px-4 max-w-6xl"
         >
           {aboutStats.map((stat, index) => (
             <motion.div
@@ -228,13 +228,13 @@ const About = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-              className={`flex flex-col items-center p-6 rounded-xl border ${stat.borderColor} ${stat.bgColor} backdrop-blur-sm hover:scale-105 transition-transform duration-300`}
+              className={`flex flex-col items-center p-4 md:p-6 rounded-xl border ${stat.borderColor} ${stat.bgColor} backdrop-blur-sm hover:scale-105 transition-transform duration-300`}
             >
-              <stat.icon className={`${stat.color} text-3xl mb-3`} />
-              <div className={`${stat.color} text-2xl font-mono font-bold mb-1`}>
+              <stat.icon className={`${stat.color} text-2xl md:text-3xl mb-2 md:mb-3`} />
+              <div className={`${stat.color} text-xl md:text-2xl font-mono font-bold mb-1`}>
                 {stat.number}
               </div>
-              <div className="text-white/60 font-mono text-sm">
+              <div className="text-white/60 font-mono text-xs md:text-sm text-center">
                 {stat.label}
               </div>
             </motion.div>
@@ -247,12 +247,12 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="mt-20"
+          className="mt-16 md:mt-20 px-4"
         >
           <div className="text-white/80 font-mono text-sm mb-6 text-center">
             {"// Connect with me:"}
           </div>
-          <div className="flex gap-6 items-center justify-center">
+          <div className="grid grid-cols-3 md:flex gap-4 md:gap-6 items-center justify-center max-w-4xl mx-auto">
             {[
               { icon: FaGithub, href: "https://github.com/dave1725", label: "GitHub" },
               { icon: BsLinkedin, href: "https://www.linkedin.com/in/dave-meshak-j-6801b2204/", label: "LinkedIn" },
@@ -268,10 +268,10 @@ const About = () => {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, y: -5 }}
                 whileTap={{ scale: 0.9 }}
-                className="flex flex-col items-center gap-2 p-3 rounded-lg border border-white/20 bg-white/5 backdrop-blur-sm hover:border-blue-400/50 hover:bg-blue-500/10 transition-all duration-300"
+                className="flex flex-col items-center gap-2 p-2 md:p-3 rounded-lg border border-white/20 bg-white/5 backdrop-blur-sm hover:border-blue-400/50 hover:bg-blue-500/10 transition-all duration-300"
               >
-                <social.icon size={24} className="text-white hover:text-blue-400 transition-colors" />
-                <span className="text-xs font-mono text-white/60">{social.label}</span>
+                <social.icon size={20} className="text-white hover:text-blue-400 transition-colors md:w-6 md:h-6" />
+                <span className="text-xs font-mono text-white/60 text-center">{social.label}</span>
               </motion.a>
             ))}
           </div>
