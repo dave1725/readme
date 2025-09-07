@@ -134,8 +134,8 @@ const allProjectData = [{
     ],
     technologies: ["Next.js", "TailwindCSS", "Sanity CMS", "Cloudflare", "Framer Motion"],
     techIcons: [SiNextdotjs, SiTailwindcss, SiCloudflare],
-    githubLink: "https://github.com/dave1725",
-    liveLink: "https://devfolio.co/@dave1725",
+    githubLink: "https://github.com/dave1725/OneHeartv2",
+    liveLink: "https://oneheart25.vercel.app/",
     featured: false,
     type: "web"
   },
@@ -154,8 +154,8 @@ const allProjectData = [{
     ],
     technologies: ["Python", "Circom", "ZK-SNARKs", "CLI Tooling", "GitHub Actions"],
     techIcons: [SiPython],
-    githubLink: "https://github.com/dave1725",
-    liveLink: "https://github.com/dave1725",
+    githubLink: "https://github.com/dave1725/poseidon",
+    liveLink: "https://daves-organization-7.gitbook.io/poseidon",
     featured: false,
     type: "crypto"
   },
@@ -174,8 +174,8 @@ const allProjectData = [{
     ],
     technologies: ["Python", "Cryptography", "CyberSecurity", "Git"],
     techIcons: [SiPython],
-    githubLink: "https://github.com/dave1725",
-    liveLink: "https://github.com/dave1725",
+    githubLink: "https://github.com/dave1725/pegasusX",
+    liveLink: "https://github.com/dave1725/pegasusX",
     featured: false,
     type: "security"
   },
@@ -194,8 +194,8 @@ const allProjectData = [{
     ],
     technologies: ["Python", "System Programming", "Desktop App"],
     techIcons: [SiPython],
-    githubLink: "https://github.com/dave1725",
-    liveLink: "https://github.com/dave1725",
+    githubLink: "https://github.com/dave1725/heracles",
+    liveLink: "https://github.com/dave1725/heracles",
     featured: false,
     type: "desktop"
   }

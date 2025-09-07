@@ -6,7 +6,7 @@ import { SiPolygon, SiHyperledger, SiPrometheus, SiGrafana, SiNextdotjs, SiTailw
 const internshipStats = [
   {
     icon: FaBriefcase,
-    number: "3",
+    number: "2",
     label: "internships.total",
     color: "text-blue-400",
     bgColor: "bg-blue-500/10",
@@ -22,7 +22,7 @@ const internshipStats = [
   },
   {
     icon: FaCode,
-    number: "15+",
+    number: "10+",
     label: "technologies.used",
     color: "text-purple-400",
     bgColor: "bg-purple-500/10",
@@ -30,7 +30,7 @@ const internshipStats = [
   },
   {
     icon: FaCalendarAlt,
-    number: "12",
+    number: "5",
     label: "months.experience",
     color: "text-yellow-400",
     bgColor: "bg-yellow-500/10",
@@ -54,7 +54,7 @@ const internshipData = [
       "Optimized performance and user experience"
     ],
     technologies: ["Polygon", "Solidity", "Git", "GitHub Actions", "Analytics"],
-    githubLink: "https://github.com/dave1725",
+    githubLink: "https://github.com/2LYP",
     status: "active"
   },
   {
@@ -72,7 +72,7 @@ const internshipData = [
       "Enhanced distributed application reliability"
     ],
     technologies: ["Hyperledger Fabric", "Prometheus", "Grafana", "Distributed Systems"],
-    githubLink: "https://github.com/dave1725",
+    detailsLink: "https://drive.google.com/file/d/1oy59FMarm94FYv-9k1zA_OAxph5c8lCG/view?usp=sharing",
     status: "completed"
   },
 ];
@@ -229,19 +229,28 @@ const Internships = () => {
 
                 {/* Action Buttons */}
                 <div className="mt-auto flex gap-2">
-                  <a
-                    href={internship.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 px-3 py-2 text-white text-sm font-mono rounded border border-blue-400/30 bg-blue-500/10 backdrop-blur-sm transition duration-300 hover:bg-blue-500/20 hover:border-blue-400/50 group-hover:scale-[1.02] flex items-center justify-center gap-2"
-                  >
-                    <FaGithub size={14} />
-                    {"view.code()"}
-                  </a>
-                  <button className="px-3 py-2 text-white text-sm font-mono rounded border border-white/30 bg-white/5 backdrop-blur-sm transition duration-300 hover:bg-white/10 hover:border-white/50 group-hover:scale-[1.02] flex items-center justify-center gap-2">
-                    <FaExternalLinkAlt size={12} />
-                    {"details"}
-                  </button>
+                  {internship.githubLink && (
+                    <a
+                      href={internship.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-3 py-2 text-white text-sm font-mono rounded border border-blue-400/30 bg-blue-500/10 backdrop-blur-sm transition duration-300 hover:bg-blue-500/20 hover:border-blue-400/50 group-hover:scale-[1.02] flex items-center justify-center gap-2"
+                    >
+                      <FaGithub size={14} />
+                      {"view.code()"}
+                    </a>
+                  )}
+                  {internship.detailsLink && (
+                    <a
+                      href={internship.detailsLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 px-3 py-2 text-white text-sm font-mono rounded border border-white/30 bg-white/5 backdrop-blur-sm transition duration-300 hover:bg-white/10 hover:border-white/50 group-hover:scale-[1.02] flex items-center justify-center gap-2"
+                    >
+                      <FaExternalLinkAlt size={12} />
+                      {"details"}
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
