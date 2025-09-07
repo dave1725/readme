@@ -63,9 +63,8 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 **Dave Meshak J**
 - GitHub: [@dave1725](https://github.com/dave1725)
-- LinkedIn: [Dave Meshak J](https://linkedin.com/in/davemeshakj)
-- Email: [your-email@example.com](mailto:your-email@example.com)
-- Portfolio: [Live Demo](https://your-portfolio-url.com)
+- LinkedIn: [Dave Meshak J](https://www.linkedin.com/in/dave-meshak-j-6801b2204/)
+- Email: [your-email@example.com](mailto:davedmj1725@gmail.com)
 
 ---
 
