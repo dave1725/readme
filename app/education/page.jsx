@@ -30,8 +30,8 @@ const educationStats = [
   },
   {
     icon: FaStar,
-    number: "88%",
-    label: "nptel.score",
+    number: "60",
+    label: "total.courses",
     color: "text-purple-400",
     bgColor: "bg-purple-500/10",
     borderColor: "border-purple-400/30"

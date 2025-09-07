@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaCode, FaRocket, FaCoffee, FaTerminal, FaUser, FaLaptopCode, FaDiscord } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { FaQuora } from "react-icons/fa";
-import { SiDevdotto } from "react-icons/si";
+import { SiDevdotto, SiEthereum } from "react-icons/si";
 import { gsap } from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
 
@@ -71,7 +71,7 @@ const About = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative flex flex-col w-[450px] h-[500px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
+            className="relative flex flex-col w-[450px] h-[550px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
           >
             {/* Terminal Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-blue-500/5">
@@ -117,6 +117,22 @@ const About = () => {
               <h2 className="text-lg font-mono text-blue-400 mb-4 text-center">
                 Software Developer
               </h2>
+
+              {/* Buy Me Coffee with ETH Button */}
+              <div className="mt-auto">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => {
+                    navigator.clipboard.writeText("0x88C8665671C970813afF2172043e93a00b941c54");
+                    alert("ETH Address copied to clipboard!");
+                  }}
+                  className="w-full px-4 py-3 text-white text-sm font-mono rounded border border-yellow-400/30 bg-yellow-500/10 backdrop-blur-sm transition duration-300 hover:bg-yellow-500/20 hover:border-yellow-400/50 flex items-center justify-center gap-2"
+                >
+                  <FaCoffee className="text-yellow-400" size={16} />
+                  {"buy_me_coffee_with_ETH()"}
+                </motion.button>
+              </div>
             </div>
           </motion.div>
 
