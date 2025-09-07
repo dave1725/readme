@@ -121,6 +121,18 @@ const Navbar = () => {
                 </motion.a>
               );
             })}
+            
+            {/* Resume Button */}
+            <motion.a
+              href="https://drive.google.com/file/d/1az7opAcouYeNpyufZJ4sJZgfHNXXAaZS/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="ml-4 px-4 py-2 bg-blue-500/20 text-white font-medium text-sm rounded-lg hover:bg-blue-500/30 transition-all duration-300 border border-blue-400/30 hover:border-blue-400/50"
+            >
+              Resume
+            </motion.a>
           </div>
 
           {/* Mobile menu button */}
@@ -171,6 +183,18 @@ const Navbar = () => {
                   </motion.a>
                 );
               })}
+              
+              {/* Mobile Resume Button */}
+              <motion.a
+                href="https://drive.google.com/file/d/1az7opAcouYeNpyufZJ4sJZgfHNXXAaZS/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMobileMenuOpen(false)}
+                whileHover={{ scale: 1.02 }}
+                className="flex items-center justify-center mt-4 px-4 py-3 bg-blue-500/20 text-white font-medium rounded-lg hover:bg-blue-500/30 transition-all duration-300 border border-blue-400/30 hover:border-blue-400/50"
+              >
+                <span>View Resume</span>
+              </motion.a>
             </div>
           </motion.div>
         )}
