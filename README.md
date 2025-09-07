@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio - Dave Meshak J
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.0.0-blue?logo=react&logoColor=white)](https://reactjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.23.12-0055FF?logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![GSAP](https://img.shields.io/badge/GSAP-3.13.0-88CE02?logo=greensock&logoColor=white)](https://greensock.com/gsap/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-First, run the development server:
+A modern, responsive personal portfolio website built with Next.js, featuring a terminal-inspired design with smooth animations and interactive elements. The portfolio showcases professional experience, projects, education, and technical skills in a developer-centric aesthetic.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [License](#license)
+- [Author](#author)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+- **Terminal Aesthetic**: Developer-inspired UI with command-line styling
+- **Smooth Animations**: Powered by Framer Motion and GSAP for engaging interactions
+- **Active Navigation**: Smart navbar that highlights current section while scrolling
+- **Lazy Loading**: Optimized performance with component-level code splitting
+- **SEO Optimized**: Built with Next.js App Router for excellent SEO performance
+- **Glassmorphism Effects**: Modern UI design with transparent and blurred elements
+- **Interactive Background**: Animated star field with twinkling effects
+- **Resume Integration**: Direct link to downloadable resume/CV
+- **Project Showcase**: Detailed project cards with technology stacks and links
+- **Professional Sections**: Education, internships, hackathons, podcasts, and communities
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+### Frontend Framework
+- **Next.js 15.1.7** - React framework with App Router
+- **React 19.0.0** - JavaScript library for building user interfaces
+- **TypeScript 5.9.2** - Type safety and better developer experience
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling & UI
+- **Tailwind CSS 3.4.1** - Utility-first CSS framework
+- **PostCSS 8** - CSS processing and optimization
+- **Framer Motion 12.23.12** - Animation library for React
+- **GSAP 3.13.0** - Professional animation library
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Icons & Graphics
+- **Lucide React 0.542.0** - Beautiful & consistent icon library
+- **React Icons 5.5.0** - Popular icon library with multiple icon packs
+- **Three.js 0.173.0** - 3D graphics library
 
-## Deploy on Vercel
+### Data Visualization
+- **Recharts 3.1.2** - Composable charting library for React
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Development Tools
+- **ESLint 9** - Code linting and formatting
+- **Critters 0.0.23** - Critical CSS inlining
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Dave Meshak J**
+- GitHub: [@dave1725](https://github.com/dave1725)
+- LinkedIn: [Dave Meshak J](https://linkedin.com/in/davemeshakj)
+- Email: [your-email@example.com](mailto:your-email@example.com)
+- Portfolio: [Live Demo](https://your-portfolio-url.com)
+
+---
+
+Built with ❤️ using Next.js and modern web technologies.
