@@ -21,7 +21,7 @@ const aboutStats = [
   },
   {
     icon: FaRocket,
-    number: "20+",
+    number: "10+",
     label: "projects.built",
     color: "text-green-400",
     bgColor: "bg-green-500/10", 
@@ -125,7 +125,7 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="relative flex flex-col w-[600px] h-[500px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
+            className="relative flex flex-col w-[600px] h-[600px] border border-white/20 rounded-xl bg-black/50 backdrop-blur-sm"
           >
             {/* Terminal Header */}
             <div className="flex items-center justify-between px-4 py-3 border-b border-white/10 bg-green-500/5">
@@ -156,7 +156,7 @@ const About = () => {
               <div className="mb-6">
                 <div className="text-white/80 font-mono text-sm mb-3">{"// Specializations:"}</div>
                 <div className="flex flex-wrap gap-2">
-                  {["Full Stack Development", "Blockchain", "AI/ML", "Web3", "DevOps", "Cloud"].map((skill, index) => (
+                  {["Full Stack Development", "zkProofs", "Blockchain", "AI/ML", "C++", "Docker", "Cloud","NodeJS","Express", "Ethereum", "Solidity","MongoDB","CouchDB","Hyperledger Fabric","Github Actions","NextJS","ReactJS","HTML5/CSS3","Python"].map((skill, index) => (
                     <span
                       key={index}
                       className="text-xs text-blue-400 bg-blue-400/10 px-3 py-1 rounded border border-blue-400/20 font-mono"
@@ -239,10 +239,10 @@ const About = () => {
           <div className="flex gap-6 items-center justify-center">
             {[
               { icon: FaGithub, href: "https://github.com/dave1725", label: "GitHub" },
-              { icon: BsLinkedin, href: "https://linkedin.com/in/davemeshak", label: "LinkedIn" },
+              { icon: BsLinkedin, href: "https://www.linkedin.com/in/dave-meshak-j-6801b2204/", label: "LinkedIn" },
               { icon: SiDevdotto, href: "https://devfolio.co/@dave1725", label: "Devfolio" },
-              { icon: FaQuora, href: "https://quora.com/profile/davemeshak", label: "Quora" },
-              { icon: FaLaptopCode, href: "https://leetcode.com/davecodes", label: "LeetCode" },
+              { icon: FaQuora, href: "https://www.quora.com/profile/DAVE-MESHACH", label: "Quora" },
+              { icon: FaLaptopCode, href: "https://www.codechef.com/users/dave1725", label: "CodeChef" },
               { icon: FaDiscord, href: "https://discord.gg/davemeshak", label: "Discord" }
             ].map((social, index) => (
               <motion.a
