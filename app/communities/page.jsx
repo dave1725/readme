@@ -22,7 +22,7 @@ const communityStats = [
   },
   {
     icon: FaTrophy,
-    number: "5+",
+    number: "4",
     label: "projects.delivered",
     color: "text-yellow-400",
     bgColor: "bg-yellow-500/10",
