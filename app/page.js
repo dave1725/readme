@@ -27,75 +27,89 @@ export default function Home() {
       <Background /> 
       <Navbar />
       
-      <Suspense fallback={<LoadingSection />}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-        >
-          <About />
-        </motion.div>
-      </Suspense>
+      <section id="about">
+        <Suspense fallback={<LoadingSection />}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <About />
+          </motion.div>
+        </Suspense>
+      </section>
       
-      <Suspense fallback={<LoadingSection />}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <Education />
-        </motion.div>
-      </Suspense>
+      <section id="education">
+        <Suspense fallback={<LoadingSection />}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <Education />
+          </motion.div>
+        </Suspense>
+      </section>
       
-      <Suspense fallback={<LoadingSection />}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-        >
-          <Projects />
-        </motion.div>
-      </Suspense>
+      <section id="projects">
+        <Suspense fallback={<LoadingSection />}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <Projects />
+          </motion.div>
+        </Suspense>
+      </section>
       
-      <Suspense fallback={<LoadingSection />}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-        >
-          <Internships />
-        </motion.div>
-      </Suspense>
+      <section id="internships">
+        <Suspense fallback={<LoadingSection />}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <Internships />
+          </motion.div>
+        </Suspense>
+      </section>
       
-      <Suspense fallback={<LoadingSection />}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-        >
-          <Communities />
-        </motion.div>
-      </Suspense>
+      <section id="communities">
+        <Suspense fallback={<LoadingSection />}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
+            <Communities />
+          </motion.div>
+        </Suspense>
+      </section>
       
-      <Suspense fallback={<LoadingSection />}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-        >
-          <Hackathons />
-        </motion.div>
-      </Suspense>
+      <section id="hackathons">
+        <Suspense fallback={<LoadingSection />}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            <Hackathons />
+          </motion.div>
+        </Suspense>
+      </section>
       
-      <Suspense fallback={<LoadingSection />}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-        >
-          <Podcasts />
-        </motion.div>
-      </Suspense>
+      <section id="podcasts">
+        <Suspense fallback={<LoadingSection />}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+          >
+            <Podcasts />
+          </motion.div>
+        </Suspense>
+      </section>
       
       <Suspense fallback={<LoadingSection />}>
         <Footer />

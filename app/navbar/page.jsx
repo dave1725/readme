@@ -23,23 +23,56 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      // Update active section based on scroll position
+      // Update active section based on scroll position with improved detection
       const sections = navItems.map(item => item.path.substring(1));
-      for (const section of sections) {
+      let currentSection = 'about'; // default to first section
+      
+      // Check each section to find which one is currently in view
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section);
+          // A section is active if it's top is above or at the middle of the viewport
+          if (rect.top <= window.innerHeight / 2) {
+            currentSection = section;
             break;
           }
         }
       }
+      
+      setActiveSection(currentSection);
     };
 
+    // Initial check
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Handle smooth scrolling when clicking nav links
+  const handleNavClick = (e, path) => {
+    e.preventDefault();
+    const targetId = path.substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      const navHeight = 80; // navbar height
+      const targetPosition = targetElement.offsetTop - navHeight;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Update active section immediately for better UX
+      setActiveSection(targetId);
+      
+      // Close mobile menu if open
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   return (
     <motion.nav 
@@ -74,6 +107,7 @@ const Navbar = () => {
                 <motion.a
                   key={index}
                   href={item.path}
+                  onClick={(e) => handleNavClick(e, item.path)}
                   whileHover={{ scale: 1.05, y: -1 }}
                   whileTap={{ scale: 0.95 }}
                   className={`flex items-center space-x-2 px-3 py-2 rounded-lg transition-all duration-300 group ${
@@ -118,15 +152,21 @@ const Navbar = () => {
             <div className="px-6 py-4 space-y-2">
               {navItems.map((item, index) => {
                 const Icon = item.icon;
+                const isActive = activeSection === item.path.substring(1);
+                
                 return (
                   <motion.a
                     key={index}
                     href={item.path}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => handleNavClick(e, item.path)}
                     whileHover={{ scale: 1.02 }}
-                    className="flex items-center space-x-3 px-4 py-3 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-all duration-300"
+                    className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-300 ${
+                      isActive
+                        ? 'bg-blue-500/20 text-white'
+                        : 'text-white/70 hover:text-white hover:bg-white/10'
+                    }`}
                   >
-                    <Icon size={20} />
+                    <Icon size={20} className={`${isActive ? 'text-blue-400' : ''}`} />
                     <span className="font-medium">{item.name}</span>
                   </motion.a>
                 );
